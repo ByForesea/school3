@@ -12,7 +12,16 @@ function scrollFunction() {
     document.getElementById("logo").style.width = "15%";
     mybutton.style.display = "none";
   }
+
+  if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+    sidebar.style.position = "absolute";
+  } else {
+    sidebar.style.position = "fixed";
+  }
 }
+
+
+
 
 //宣告預設表單內容為空 （你想要的話也可以加東西）
 var initSubject='',initBody='';

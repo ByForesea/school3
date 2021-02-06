@@ -19,13 +19,21 @@ body {
     color: black;
     padding: 16px;
     text-decoration: none;
+    
   }
    
   .sidebar a.active {
     background-color: #0fc9a4;
     background-image: linear-gradient(10deg, #40e0d0 0%, #31ccbd 74%);
     color: white;
+    cursor:auto;
   }
+
+  .sidebar a.click {
+    border-left: #40e0d0 6px solid;
+    color: black;
+  }
+
   
   .sidebar a:hover:not(.active) {
     border-left: #40e0d0 6px solid;
