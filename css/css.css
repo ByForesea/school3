@@ -42,8 +42,8 @@ body {
   
   div.content {
     margin-left: 400px;
-    padding: 1px 16px;
-    height: 1000px;
+    padding: 1px 16px 16px 16px;
+    height: fit-content;
     width:1000px;
   }
 
@@ -77,15 +77,28 @@ body {
     }
     .sidebar a {float: left;}
     div.content {margin-left: 0;width:400px; margin: 0 auto;}
-    .breadcrumb{
-        width: 80%;
-        margin-bottom: 0%;
-
+    .navbar-toggler{
+      margin-top:-2%;
+    }
+    .navbar-toggler{
+      margin-top:-13%;
     }
 
   }
   
-  @media screen and (max-width: 400px) {
+  @media screen and (min-width: 700px) {
+
+    .sidebar {
+      margin-left: 2%;
+      margin-top: 3%;
+      padding: 0;
+      width: 150px;
+      background-color: #ffffff;
+      position: fixed;
+      height: fit-content;
+      overflow: auto;
+    }
+
     .sidebar a {
       text-align: center;
       float: none;
@@ -93,5 +106,10 @@ body {
     .breadcrumb{
       width: 80%;
       margin-bottom: 0%;
+    }
+
+    div.content {
+      width:70%;
+      margin-left: 25%;
     }
   }
