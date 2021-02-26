@@ -190,6 +190,7 @@ body {
     /* padding: 10px 23px; */
   }
 
+
   .breadcrumb{
     width: fit-content;
     height: auto;
@@ -209,7 +210,7 @@ body {
     position: absolute;
     height: fit-content;
     overflow: hidden;
-    
+    display: none;
   }
 
   .nav-item{
@@ -219,9 +220,12 @@ body {
     width: 100%;
     text-align: center;
     background-color: white;
+
   }
+   input{
+     width: 100%;
 
-
+   }
 }
 
 
