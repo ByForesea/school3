@@ -5,15 +5,15 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     document.getElementById("navbar").style.height = "50px";
-    document.getElementById("logo").style.width = "10%";
+    document.getElementById("logo").style.width = "8%";
     mybutton.style.display = "block";
   } else {
     document.getElementById("navbar").style.height = "70px";
-    document.getElementById("logo").style.width = "15%";
+    document.getElementById("logo").style.width = "11%";
     mybutton.style.display = "none";
   }
 
-  if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+  if (document.body.scrollTop > 650 || document.documentElement.scrollTop > 650) {
     sidebar.style.position = "absolute";
   } else {
     sidebar.style.position = "fixed";

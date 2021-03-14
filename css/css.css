@@ -42,13 +42,23 @@ body {
   
   div.content {
     margin-left: 400px;
-    padding: 1px 16px 16px 16px;
+    padding: 1px 8px 8px 8px;
     height: fit-content;
     width:1000px;
   }
 
   .article{
-    margin-left: 5%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+  }
+
+  .contact{
+    border-left: 2px solid #c5e7e4;
+    border-right: 2px solid #c5e7e4;
+    padding: 30px;
+    margin: auto;
+    background-color: #fff;
+    z-index: -50;
   }
   
   .breadcrumb{
@@ -68,7 +78,35 @@ body {
   .active{
      color: white;
   }
-  
+
+  h2{
+    border-left: #40e0d0 10px solid;
+    padding-left: 10px;
+  }
+
+  .iframe-rwd {
+    position: relative;
+    padding-bottom: 50%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+  .iframe-rwd iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+  .contact-content{
+    border-left: 2px solid #c5e7e4;
+    border-right: 2px solid #c5e7e4;
+    padding: 30px;
+    margin: auto;
+    background-color: #fff;
+  }
+
   @media screen and (max-width: 600px) {
     .sidebar {
       width: 100%;
@@ -84,15 +122,16 @@ body {
       margin-top:-13%;
     }
 
+
   }
   
-  @media screen and (min-width: 700px) {
+  @media (min-width: 768px) and (max-width: 979px) {
 
     .sidebar {
-      margin-left: 10%;
+      margin-left: 2%;
       margin-top: 3%;
       padding: 0;
-      width: 200px;
+      width: 120px;
       background-color: #ffffff;
       position: fixed;
       height: fit-content;
@@ -110,6 +149,7 @@ body {
 
     div.content {
       width:70%;
-      margin-left: 25%;
+      margin-left: 20%;
     }
+
   }

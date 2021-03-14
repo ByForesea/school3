@@ -393,73 +393,14 @@ body {
   height: fit-content;
 }
 
-.pin{
-  position: relative;
-  width: 25px;
-  fill: #fff;
-}
 
-.fb{
-  position: relative;
-  width: 25px;
-  fill: #fff;
-}
-
-
-.fbtn{
-  width: 200px;
-  height: 50px;
-  background-color: #f2cf43;
-  border: 0px;
-  color:#fff;
-  border-radius: 50px;
-  padding: 6px 20px;
-  cursor: pointer;
-  box-shadow: 0px 2px 2px 2px rgba(6, 116, 101, 0.4);
-  font-size: 1.5em;
-}
-
-.fbtn:hover{
-  width: 200px;
-  height: 50px;
-  background-color: #f2cf43;
-  border: 0px;
-  color:#fff;
-  border-radius: 50px;
-  padding: 6px 20px;
-  box-shadow: 0px 1px 1px 1px rgba(6, 116, 101, 0.4);
-
-  
-}
-
-.facebook{
-  background-color: #39548f;
-  margin-top: 20px;
-
-}
-
-.facebook:hover{
-  background-color: #253e72;
-
-}
-
-input{
-  padding:5px 15px; 
-  background:rgba(154, 235, 210, 0.507); border:0 none;
-  -webkit-border-radius: 5px;
-  border-radius: 50px; 
-  margin-bottom: 8px;
-  color: #194d50;
-}
-
-textarea{
-  padding:5px 15px; 
-  background:rgba(154, 235, 210, 0.507); border:0 none;
-  -webkit-border-radius: 5px;
-  border-radius: 10px; 
-  margin-bottom: 8px;
-  color: #194d50;
-}
 
 ::-webkit-input-placeholder { color: #fff; }
+
+
+
+.social a:hover{
+  border-bottom: #9aebd281 18px solid;
+  padding-bottom: -50px;
+}
 
