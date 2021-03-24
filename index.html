@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   <title>雙語計畫網頁</title>
 
   <!-- Bootstrap core CSS -->
@@ -16,7 +16,31 @@
   <!-- Custom styles for this template -->
   <link href="css/modern-business.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  
+  
+
+  
+  <style type="text/css">
+    #eventlist { list-style:none;}
+    #eventlist li { list-style:none; padding:3px; border-bottom:2px solid #eee;}
+    .eventtitle { font-weight:bold; }
+</style>
+
+
 </head>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/jquery.googlecalreader-1.1.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+  jQuery(function ($) {
+      $('#eventlist').gCalReader({
+        calendarId:'zh.taiwan#holiday@group.v.calendar.google.com',
+        apiKey:'AIzaSyC3obmYu7QdoxKSy7ZdCfZd46bmsAZJLEk',
+        sortDescending: true
+       });
+  });
+ </script>
 
 <body style="background: url(img/bg.png);">
   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
@@ -24,7 +48,7 @@
   <!-- Navigation -->
   <nav id="navbar" class="navbar fixed-top navbar-expand-lg">
     <div class="container">
-      <a class="navbar-brand" href="index.html"><img id="logo" src="logo.png" alt="" width="11%"></a>
+      <a class="navbar-brand" href="index.html"><img id="logo" src="logo.jpg" alt="" width="25%"></a>
       <button class="navbar-toggler ml-auto custom-toggler" type="button" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon my-toggler"></span>
       </button>
@@ -186,8 +210,21 @@
       </div>
     </div>
 
+<!-- 行事曆 -->
+
+<!-- 行事曆 檔案位址 -->
+
+<div class="row d-md-flex d-lg-block my-3">
+    <ul id="eventlist" class=" d-md-flex d-lg-inline-block justify-content-md-between canlendar-ul justify-content-center">
+    </ul>
+  </div>
+</div>
+
 
   </div>
+
+  
+
   <!-- /.container -->
 
   <!-- Footer -->
@@ -225,32 +262,7 @@
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   
-<script>
-  //宣告預設表單內容為空 （你想要的話也可以加東西）
-      var initSubject='',initBody='';
-   
-      //按下傳送按鈕後執行
-      function submitHandler(){
-          var to = "hsiuwennn5@gmail.com";//寫死的傳送對象 就是公司的信箱 不會顯示在網頁上
-          var name = nameText.value;//讀取ID為 nameTextuser 物件中的值
-          var email = emailText.value;
-          var subject = subText.value;
-  //把user填的資料都塞到 mail body 中
-          var body = ""+bodyText.value+'%0A%0A%0A';//%0A是換行 換了三行
-              body += "From："+nameText.value+'%0A';
-              body += "Email："+emailText.value+'%0A';
-              body += "Tel："+telText.value;
-  //傳送的主要程式碼
-          mailTo.href="mailto:"+to+"?subject="+subject+"&body="+body;
-          mailTo.click();
-      }
-  //在body onload
-      function init(){
-          subText.value=initSubject;
-          toText.value=initTo;
-          bodyText.value=initBody;
-      }
-  </script>
+
 </body>
 
 </html>

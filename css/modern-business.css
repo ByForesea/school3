@@ -68,6 +68,7 @@ body {
 
 #logo{
   transition: 0.4s;
+  margin-top: -10px;
 }
 
 .navbar-toggler{
@@ -404,3 +405,45 @@ body {
   padding-bottom: -50px;
 }
 
+.eventdate
+{
+  
+  background-color: #1B5299;
+  font-size: small;
+  color:#EAEBED;
+}
+.eventday
+{
+  text-align: center;
+}
+.eventtitle
+{
+
+  vertical-align:middle;
+  font-size: small;
+}
+.canlendar-li
+{
+  
+  letter-spacing: normal;
+ 
+}
+.custom-schoolinfoli
+{
+ text-align: center;
+}
+.custom-schoolinfoli .col-3 
+{
+  background-color: #1B5299;
+  color: #EAEBED;
+  border-bottom: 0.5px solid #EAEBED;
+}
+.custom-schoolinfoli .col-9
+{
+  border-bottom: 0.5px solid grey;
+}
+.custom-schoolinfoli .col-9 ul li
+{
+  background-color: transparent;
+ 
+}
